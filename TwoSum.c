@@ -1,16 +1,6 @@
-/*
-A solution to the LeetCode problem "twosum", which, given an array of integers,
-returns indices of two numbers such that they add up to a specific target.
-
-It is assumed that each input has exactly one solution.
-
-Author: Anthony Shackell, Jan 18, 2017
-*/
-
 #include <stdlib.h>
 #include <stdio.h>
 
-// Brute force O(n^2)
 int* twosum (int* nums, int numsSize, int target) {
 
 int *result = (int *)malloc(sizeof(int));
@@ -36,7 +26,6 @@ for( int i = 0; i < numsSize; i++ ){
 }
 
 int main() {
-  // The following is just a single test case. Not meant to be exhaustive.
   int nums[7] = {0,1,1,1,1,1,3};
   int* indices = twosum(nums, 7, 5);
   if (!indices) {
